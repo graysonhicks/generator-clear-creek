@@ -1,0 +1,33 @@
+{
+  "name": "generator-clear-creek",
+  "version": "0.1.37",
+  "description": "",
+  "license": "MIT",
+  "repository": "graysonhicks/generator-clear-creek",
+  "authors": [
+    "Grayson Hicks <graysonhicks@gmail.com>"
+    "Jacob Smith <jacob@jacobsmith.io>",
+    "Dan Dietz <dan@boltaffect.com>"
+  ],
+  "main": "app/index.js",
+  "engines": {
+    "node": ">=5.0",
+    "npm": ">=3.0"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "theironyard",
+    "sass"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "ejs": "^2.4.1",
+    "html-wiring": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^0.22.5",
+    "yosay": "^1.1.0"
+  }
+}

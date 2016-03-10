@@ -1,0 +1,9 @@
+- handlebars
+- backbone
+- react
+- fonts `app/fonts/**/*`
+- 'app/*', 'app/.*' '!app/*.html'
+- babel
+- sourcemaps
+- testing (mocha + chai?)
+- test the generator itself with yeoman-assert
