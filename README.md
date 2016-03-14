@@ -1,6 +1,6 @@
 ### Yeoman TIY Generator
 
-This is a Yeoman generator that is based on The Iron Yard Student Yeoman generator. This version is set up for those wanting to start a project with several popular JS libraries, and a live-server with browserify, watchify, SASS watch and livereload runn
+This is a Yeoman generator that is based on The Iron Yard Student Yeoman generator. This version is set up for those wanting to start a project with several popular JS libraries, and a live-server with browserify, watchify, SASS watch and livereload run
 
 ### What is Included
 * Sass

@@ -11,7 +11,7 @@ var htmlWiring = require('html-wiring');
 var mkdirp = require('mkdirp');
 
 var AppGenerator = module.exports = function Appgenerator(args, options, config) {
-  console.log('Dietz generator');
+  console.log('CLEAR CREEK!');
 
   yeoman.Base.apply(this, arguments);
   this.options = options;
@@ -47,7 +47,7 @@ AppGenerator.prototype.askFor = function askFor() {
 
     var hasFeature = function (feat) {
       return features.indexOf(feat) !== -1;
-    }
+    };
 
     // manually deal with the response, get back and store the results.
     // we change a bit this way of doing to automatically do this in the self.prompt() method.
@@ -59,12 +59,12 @@ AppGenerator.prototype.askFor = function askFor() {
   }.bind(this));
 };
 
-AppGenerator.prototype.packageJSON = function () {
-  this.template('_package.json', 'package.json');
+AppGenerator.prototype.packageJSON = function () { // to create file do this setup with .prototype
+  this.template('_package.json', 'package.json'); // USE NPM LINK TO TEST
 };
 
 AppGenerator.prototype.gitIgnore = function () {
-  this.copy('gitignore', '.gitignore');
+  this.copy('gitignore', '.gitignore');// first file is template from templates file, second is what it becomes
 };
 
 AppGenerator.prototype.eslintrc = function () {
@@ -85,7 +85,7 @@ AppGenerator.prototype.mainStylesheet = function () {
 
 AppGenerator.prototype.writeIndex = function () {
   this.indexFile = htmlWiring.readFileAsString(path.join(this.sourceRoot(), 'index.html'));
-  this.indexFile = engine(this.indexFile, this);
+  this.indexFile = engine(this.indexFile, this); // same as this.copy but reads as a string first
 };
 
 AppGenerator.prototype.copyIcons = function () {
@@ -93,7 +93,7 @@ AppGenerator.prototype.copyIcons = function () {
     this.templatePath('favicon.ico'),
     this.destinationPath('app/favicon.ico')
   );
-}
+};
 
 AppGenerator.prototype.install = function() {
   this.npmInstall([], {'loglevel': 'error'});
@@ -112,5 +112,5 @@ AppGenerator.prototype.app = function () {
   mkdirp('dist/images');
   mkdirp('dist/fonts');
 
-  this.write('app/index.html', this.indexFile);
+  this.write('app/index.html', this.indexFile); //if this.copy on html then you dont need this
 };

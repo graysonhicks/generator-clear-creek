@@ -1,11 +1,11 @@
 {
   "name": "generator-clear-creek",
-  "version": "0.1.37",
+  "version": "0.1.38",
   "description": "",
   "license": "MIT",
   "repository": "graysonhicks/generator-clear-creek",
   "authors": [
-    "Grayson Hicks <graysonhicks@gmail.com>"
+    "Grayson Hicks <graysonhicks@gmail.com>",
     "Jacob Smith <jacob@jacobsmith.io>",
     "Dan Dietz <dan@boltaffect.com>"
   ],
@@ -20,7 +20,15 @@
   "keywords": [
     "yeoman-generator",
     "theironyard",
-    "sass"
+    "sass",
+    "backbone",
+    "bootstrap",
+    "handlebars",
+    "generator",
+    "yeoman",
+    "browserify",
+    "jquery",
+    "underscore"
   ],
   "dependencies": {
     "chalk": "^1.1.1",
