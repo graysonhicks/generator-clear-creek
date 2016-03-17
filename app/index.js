@@ -30,15 +30,27 @@ AppGenerator.prototype.askFor = function askFor() {
     choices: [{
       name: 'Bootstrap',
       value: 'includeBootstrap',
-      checked: true
+      checked: false
     },{
       name: 'Handlebars',
       value: 'includeHandlebars',
-      checked: true
+      checked: false
     },{
       name: 'Backbone',
       value: 'includeBackbone',
-      checked: true
+      checked: false
+    },{
+      name: 'React',
+      value: 'includeReact',
+      checked: false
+    },{
+      name: 'React Bootstrap Components',
+      value: 'includeReactBootstrap',
+      checked: false
+    },{
+      name: 'Backbone React Components',
+      value: 'includeReactBackbone',
+      checked: false
     }]
   }];
 
@@ -54,7 +66,9 @@ AppGenerator.prototype.askFor = function askFor() {
     this.includeBootstrap = hasFeature('includeBootstrap');
     this.includeHandlebars = hasFeature('includeHandlebars');
     this.includeBackbone = hasFeature('includeBackbone');
-
+    this.includeReact = hasFeature('includeReact');
+    this.includeReactBootstrap = hasFeature('includeReactBootstrap');
+    this.includeReactBackbone = hasFeature('includeReactBackbone');
     cb();
   }.bind(this));
 };
