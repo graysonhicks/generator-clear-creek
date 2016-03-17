@@ -1,6 +1,6 @@
 {
   "name": "generator-clear-creek",
-  "version": "0.1.39",
+  "version": "0.1.40",
   "description": "",
   "license": "MIT",
   "repository": "graysonhicks/generator-clear-creek",
@@ -28,7 +28,9 @@
     "yeoman",
     "browserify",
     "jquery",
-    "underscore"
+    "underscore",
+    "react",
+    "reactdom"
   ],
   "dependencies": {
     "chalk": "^1.1.1",
