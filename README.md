@@ -12,6 +12,9 @@ This is a Yeoman generator that is based on The Iron Yard Student Yeoman generat
 * Bootstrap
 * Backbone
 * Handlebars
+* React
+* React DOM
+* Backbone and Bootstrap component mixins for React
 
 ### Installation & Usage
 
@@ -40,3 +43,4 @@ There are a few specific tasks so feel free to check out the `package.json` but 
 
 * `npm run watch` - Starts a server and watches for changes, also livereload
 * `npm run deploy` - sorts out folders for deploying properly to gh-pages in one command
+* Be sure to keep JSX out of your .js files for the deploy command to work
